@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, exploreActivity.class);
         startActivity(i);
         //finish();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
