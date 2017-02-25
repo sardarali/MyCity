@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/transition/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.2.0_65a6fa33662d5f6b19fca0a26b13f430849f7d8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_0840f00884b57e6afe044da4ef9b8dc75a705b8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="135fc0ab7a6199e66bdd9cc37c35b876120ab8ee">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_46896f97ff4b05d9cc9df2a3c9546b86c2eca9a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.2.0_a72ccb8c6dc568b5af54733e90f10b1eb2fc957c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_298109af8ff8d553acb0d0485880922d5c944e15/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_30c09d7e607754e58ced531f44ea5ce50015648f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_de1af1a6e3baeec165dc021a919f441f2cb896c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_99cda2442cba7f4671c53ed69188a6fee6d7000f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_427bb0cc068f54dac1ce263aa839b5bfa69f1b8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.2.0_28a3ab0bbcbdeb1fc7cfc0e0c8ea8092d7ccbb53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.2.0_f5a3e381a783b0cca85df62831850ed5dcd8d0d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_a8511e985acf1516d9fbae10f8f49e3e803a48cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.2.0_8036533391dbd38124318d91a941c18a284ea57a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_c5becd2e990efc5b1317a1a6bc43299bd36080e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yzhang/Documents/MyCity/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="318022351005e49bd13d6708dce38ed23a6053ed">
+        <dex dex="/Users/yzhang/Documents/MyCity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61c05dfb9f46e5d0e12da5f7b85cf11979b0b4ac/classes.dex" />
+    </item>
+
+</items>
