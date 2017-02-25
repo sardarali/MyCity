@@ -81,7 +81,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:srcCompat="@mipmap/park1"
+        app:srcCompat="@mipmap/Queens_Park_Entrance_Sign_web"
         android:id="@+id/imageView2"
         android:layout_above="@+id/namefield"
         android:layout_centerHorizontal="true" />
