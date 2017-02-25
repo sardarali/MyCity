@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".exploreActivity"></activity>
+        <activity android:name=".RewardsActivity"></activity>
+
     </application>
 
 </manifest>
