@@ -1,5 +1,6 @@
 package newwest.mycity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -26,8 +27,25 @@ public class MainActivity extends AppCompatActivity {
         text_logout.setTextColor(Color.RED);
         text_logout.setTypeface(null, Typeface.BOLD);
 
+        findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                start();
+            }
+        });
+
+
 
     }
+
+    public void start() {
+//        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+//        // interval of alarm ring
+//        int interval = 8000; // in milliseconds
+
+        Intent i = new Intent(MainActivity.this, exploreActivity.class);
+        startActivity(i);
+        //finish();
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
