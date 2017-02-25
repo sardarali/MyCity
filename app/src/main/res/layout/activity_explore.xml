@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_explore"
     android:layout_width="match_parent"
@@ -50,17 +51,6 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name:"
-        android:ems="10"
-        android:layout_above="@+id/Gobtn"
-        android:layout_alignStart="@+id/Closerbtn"
-        android:layout_marginBottom="72dp"
-        android:id="@+id/namefield" />
-
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:text="Distance:"
         android:ems="10"
         android:layout_above="@+id/Gobtn"
@@ -75,7 +65,8 @@
         android:ems="10"
         android:layout_above="@+id/distancefield"
         android:layout_toEndOf="@+id/Closerbtn"
-        android:id="@+id/parkName" />
+        android:id="@+id/parkName"
+        android:text="Queens Park" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -84,5 +75,25 @@
         android:ems="10"
         android:layout_below="@+id/parkName"
         android:layout_alignStart="@+id/parkName"
-        android:id="@+id/parkDistance" />
+        android:id="@+id/parkDistance"
+        android:text="2.3 km away" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/Queens_Park_Entrance_Sign_web"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/namefield"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name:"
+        android:ems="10"
+        android:id="@+id/namefield"
+        android:layout_alignBaseline="@+id/parkName"
+        android:layout_alignBottom="@+id/parkName"
+        android:layout_alignStart="@+id/Closerbtn" />
 </RelativeLayout>
