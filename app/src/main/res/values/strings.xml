@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MyCity</string>
     <string name="action_settings">Settings</string>
+
+    <string name="logout_format">
+        <font color='#123456'>Log Out</font>
+    </string>
+
 </resources>
