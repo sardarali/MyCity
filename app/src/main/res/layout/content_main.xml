@@ -13,14 +13,6 @@
     tools:context="newwest.mycity.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Westminster"
-        android:layout_marginTop="93dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:text="Start"
         android:layout_width="wrap_content"
@@ -47,5 +39,22 @@
         android:layout_marginBottom="20dp"
         android:layout_above="@+id/text_logout"
         android:layout_alignStart="@+id/btn_start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyCity - New Westminster"
+        android:layout_marginTop="163dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/text_logout"
+        android:layout_marginBottom="68dp"
+        android:id="@+id/imageView" />
 
 </RelativeLayout>
