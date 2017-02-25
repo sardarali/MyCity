@@ -1,6 +1,6 @@
 # Built application files
 /*/build/
-/*/.gradle/
+
 # Crashlytics configuations
 com_crashlytics_export_strings.xml
 
@@ -9,6 +9,7 @@ local.properties
 
 # Gradle generated files
 .gradle/
+.gradle/2.14.1/
 
 # Signing files
 .signing/
