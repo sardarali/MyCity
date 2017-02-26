@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="Tree Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/noimage"
+        android:id="@+id/imageView18" />
+
+    <TextView
+        android:text="Common Name:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView31"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+
+    <TextView
+        android:text="Genus:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Species:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView34"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Cultivar" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Scientific Name:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Photo Uploads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            app:srcCompat="@mipmap/camera"
+            android:id="@+id/imageView20"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_height="35dp" />
+
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="160dp" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="0.42" />
+    </LinearLayout>
+
+
+</LinearLayout>

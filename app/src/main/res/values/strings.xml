@@ -6,4 +6,32 @@
         <font color='#123456'>Log Out</font>
     </string>
 
+    <string-array name="tree_name">
+        <item>PAPERBARK MAPLE</item>
+        <item>JAPANESE MAPLE</item>
+        <item>NORWAY MAPLE</item>
+        <item>SYCAMORE MAPLE</item>
+        <item>RED MAPLE</item>
+        <item>GREY SNAKE-BARK MAPLE</item>
+        <item>SILVER MAPLE</item>
+        <item>SUGAR MAPLE</item>
+        <item>TARTARIAN MAPLE</item>
+        <item>OHIO BUCKEYE</item>
+        <item>HORSECHESTNUT</item>
+        <item>RED BUCKEYE</item>
+        <item>JAPANESE HORSECHESTNUT</item>
+        <item>ALDER</item>
+        <item>SPECKLED ALDER</item>
+        <item>SMOOTH SERVICEBERRY</item>
+        <item>YELLOW-CEDAR</item>
+        <item>HORNBEAM</item>
+        <item>BLUE-BEECH</item>
+        <item>SOUTHERN CATALPA</item>
+        <item>KATSURATREE</item>
+        <item>EASTERN REDBUD</item>
+        <item>KOUSA DOGWOOD</item>
+        <item>GINKGO</item>
+        <item>HONEY LOCUST</item>
+    </string-array>
+
 </resources>
