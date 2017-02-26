@@ -209,7 +209,7 @@
             android:layout_width="52dp"
             app:srcCompat="@mipmap/right"
             android:id="@+id/goTreeInter"
-            android:layout_height="50dp" />
+            android:layout_height="40dp" />
 
     </LinearLayout>
 
