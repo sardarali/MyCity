@@ -23,6 +23,8 @@
         <activity android:name=".RewardsActivity"></activity>
         <activity android:name=".SelectionActivity"></activity>
         <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".TreeActivity"></activity>
+        <activity android:name=".TreeInterActivity"></activity>
     </application>
 
 </manifest>

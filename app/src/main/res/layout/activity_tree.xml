@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Congratulations!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="36sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/10" />
+
+    <TextView
+        android:text="New Tree Founded!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:text="New Achievement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <ScrollView
+        android:layout_width="340dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/parkView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:scrollbarStyle="outsideInset"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@mipmap/walk_blue"
+                    android:id="@+id/imageView6"
+                    android:layout_weight="0.09" />
+
+                <TextView
+                    android:text="+ 2.3 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:layout_weight="0.91"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="145.7 km Traveled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_weight="0.30" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@mipmap/christmas_tree"
+                    android:id="@+id/imageView17"
+                    android:layout_weight="0.14" />
+
+                <TextView
+                    android:text="New Tree Visited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_weight="0.77"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="78 Trees Visited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:layout_weight="0.59" />
+
+            </LinearLayout>
+
+            <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+            </LinearLayout>
+    </ScrollView>
+
+
+            <TextView
+                android:text="Tree Information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        app:srcCompat="@mipmap/noimage"
+        android:id="@+id/imageView18" />
+
+    <TextView
+        android:text="Cultivar:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView31"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Genus:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Species:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Common Name:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView34"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="Scientific Name:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Oops! No one knows about this tree, why don't you tell us?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="52dp"
+            app:srcCompat="@mipmap/right"
+            android:id="@+id/goTreeInter"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
