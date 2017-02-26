@@ -57,6 +57,13 @@ public class TreeActivity extends AppCompatActivity {
         TextView cult = (TextView) findViewById(R.id.textView31);
         cult.setText("Cultivar: " + pdr.getCultivar());
 
+        TextView cult2 = (TextView) findViewById(R.id.textView21);
+        if(pdr.getCommonName() == null || pdr.getCommonName() == ""){
+            cult2.setText("Oops! No one knows about this tree, why don't you tell us?");
+        }else{
+            cult2.setText("");
+        }
+
 
     }
     public void go_treeinter() {
