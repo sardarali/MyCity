@@ -16,8 +16,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/10" />
+        android:layout_height="wrap_content"></Space>
 
     <TextView
         android:text="New Tree Founded!"
