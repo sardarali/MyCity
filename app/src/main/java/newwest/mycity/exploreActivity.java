@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class exploreActivity extends AppCompatActivity {
@@ -45,6 +46,7 @@ public class exploreActivity extends AppCompatActivity {
                 load_activity(v);
             }
         });
+        load_activity(null);
     }
 
     public void load_activity(View v){
@@ -78,7 +80,9 @@ public class exploreActivity extends AppCompatActivity {
         rb.setRating((float) pdr.getRating());
 
         TextView pd = (TextView) findViewById(R.id.parkDistance);
-        pd.setText(MainActivity.computeDistance(pdr.getxCoord(), pdr.getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord) + " km away");
+        double kmdist = MainActivity.computeDistance(pdr.getxCoord(), pdr.getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord) / 1000;
+        DecimalFormat df =  new DecimalFormat("##.###");
+        pd.setText( df.format(kmdist) + " km away");
 
     }
 
