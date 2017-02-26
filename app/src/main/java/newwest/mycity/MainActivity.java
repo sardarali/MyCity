@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static ArrayList<ParkDataRow> parksDataset;
-
+    public static ArrayList<treeDataRow> treesDataset;
 
     public static double currentXCoord = 49.2067442;
     public static double currentYCoord = -122.91092950000001;
@@ -43,14 +43,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void load_datasets() throws Exception{
+        loadParksDataset();
+        loadTreesDataset();
+
+    }
+
+    private void loadParksDataset() throws Exception{
         parksDataset = new ArrayList<ParkDataRow>();
-
-        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = getResources().openRawResource(R.raw.parks);
-
         BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         br.readLine();//skip header row;
         String line = "";
+
         while((line = br.readLine()) != null){
             String[] splits = line.split(",");
 
@@ -62,7 +66,26 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+    }
 
+    private void loadTreesDataset() throws Exception{
+        treesDataset = new ArrayList<treeDataRow>();
+        InputStream is = getResources().openRawResource(R.raw.trees_west);
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+        br.readLine();//skip header row;
+        String line = "";
+
+        while((line = br.readLine()) != null){
+            String[] splits = line.split(",");
+
+            if(splits[2].length()>3) {
+                treeDataRow tdr = new treeDataRow(splits[0], splits[1], splits[2], splits[3], splits[4],
+                        splits[5], Double.parseDouble(splits[6]), Double.parseDouble(splits[7]), splits[8], splits[9]);
+                if(!parksDataset.contains(tdr)) {
+                    treesDataset.add(tdr);
+                }
+            }
+        }
     }
 
     @Override

@@ -15,23 +15,23 @@
         android:text="2.3km away"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/parkDistance"
+        android:id="@+id/treeDistance"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_alignBottom="@+id/distanceField"
-        android:layout_toEndOf="@+id/distanceField"
-        android:layout_alignTop="@+id/distanceField" />
+        android:layout_alignBottom="@+id/distanceField_tree"
+        android:layout_toEndOf="@+id/distanceField_tree"
+        android:layout_alignTop="@+id/distanceField_tree" />
 
     <TextView
         android:text="Name:"
         android:layout_height="wrap_content"
-        android:id="@+id/nameField"
+        android:id="@+id/nameField_tree"
         android:textColor="#000000"
         android:textSize="18sp"
         android:layout_width="150dp"
-        android:layout_alignBaseline="@+id/parkName"
-        android:layout_alignBottom="@+id/parkName"
-        android:layout_alignStart="@+id/distanceField" />
+        android:layout_alignBaseline="@+id/treeSciName"
+        android:layout_alignBottom="@+id/treeSciName"
+        android:layout_alignStart="@+id/distanceField_tree" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         android:layout_height="40dp"
         android:layout_marginBottom="19dp"
         android:layout_marginEnd="20dp"
-        android:layout_above="@+id/Gobtn"
+        android:layout_above="@+id/Gobtn_tree"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -50,13 +50,13 @@
         android:textColor="#000000"
         android:textSize="18sp"
         android:layout_alignBottom="@+id/ratingBar"
-        android:layout_alignStart="@+id/distanceField" />
+        android:layout_alignStart="@+id/distanceField_tree" />
 
     <TextView
         android:text="Distance:"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:id="@+id/distanceField"
+        android:id="@+id/distanceField_tree"
         android:textColor="#000000"
         android:textSize="18sp"
         android:layout_above="@+id/ratingBar"
@@ -67,36 +67,18 @@
         android:text="Queens Park"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/parkName"
+        android:id="@+id/treeSciName"
         android:textColor="#000000"
         android:textSize="18sp"
         android:layout_marginBottom="34dp"
-        android:layout_above="@+id/parkDistance"
-        android:layout_toEndOf="@+id/distanceField" />
-
-    <TextView
-        android:text="You have Selected:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/youSelectedText"
-        android:textColor="#000000"
-        android:textSize="25sp"/>
-
-    <ImageView
-        app:srcCompat="@mipmap/queens_park_entrance_sign_web"
-        android:id="@+id/parkImage"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        android:layout_above="@+id/nameField"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/treeDistance"
+        android:layout_toEndOf="@+id/distanceField_tree" />
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/selectedText"
-        android:layout_below="@+id/youSelectedText"
+        android:layout_below="@+id/youSelectedParkText"
         android:layout_marginTop="14dp"
         android:layout_above="@+id/parkImage"
         android:layout_alignParentStart="true"
@@ -116,7 +98,7 @@
         android:text="Go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Gobtn"
+        android:id="@+id/Gobtn_tree"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -124,7 +106,7 @@
         android:text="Find furthest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Furthestbtn"
+        android:id="@+id/Furthestbtn_tree"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:elevation="17dp"
@@ -135,8 +117,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/SearchMorebtn"
-        android:layout_above="@+id/parkName"
-        android:layout_alignStart="@+id/Furthestbtn"
+        android:layout_above="@+id/treeSciName"
+        android:layout_alignStart="@+id/Furthestbtn_tree"
         android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:text="You have Selected:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/youSelectedParkText"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        app:srcCompat="@mipmap/queens_park_entrance_sign_web"
+        android:id="@+id/parkImage"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_above="@+id/nameField_tree"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
