@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void start() {
-        Intent i = new Intent(MainActivity.this, benchActivity.class);
+        Intent i = new Intent(MainActivity.this, SelectionActivity.class);
         startActivity(i);
         //finish();
     }
