@@ -17,7 +17,8 @@ public class ParkDataRow {
     private int rating;
 
 
-    public ParkDataRow(String streetName, int streetNumber, String parkName, String parkCategory, String neighbourhood, String parkImageName, String parkURL) {
+    public ParkDataRow(String streetName, int streetNumber, String parkName, String parkCategory,
+                       String neighbourhood, String parkImageName, String parkURL, float xCoord, float yCoord, int rating) {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
         this.parkName = parkName;
@@ -25,6 +26,9 @@ public class ParkDataRow {
         this.neighbourhood = neighbourhood;
         this.parkImageName = parkImageName;
         this.parkURL = parkURL;
+        this.xCoord = xCoord;
+        this.yCoord = yCoord;
+        this.rating = rating;
     }
 
     public String getStreetName() {

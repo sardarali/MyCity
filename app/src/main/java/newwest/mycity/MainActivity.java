@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
             String[] splits = line.split(",");
 
             if(splits[2].length()>3) {
-                ParkDataRow pdr = new ParkDataRow(splits[0], Integer.parseInt(splits[1]), splits[2], splits[3], splits[4], splits[5], splits[6]);
+                ParkDataRow pdr = new ParkDataRow(splits[0], Integer.parseInt(splits[1]), splits[2], splits[3], splits[4],
+                        splits[5], splits[6], Float.parseFloat(splits[7]), Float.parseFloat(splits[8]), Integer.parseInt(splits[9]));
                 if(!parksDataset.contains(pdr)) {
                     parksDataset.add(pdr);
                 }

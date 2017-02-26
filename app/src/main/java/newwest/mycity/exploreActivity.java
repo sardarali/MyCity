@@ -58,7 +58,7 @@ public class exploreActivity extends AppCompatActivity {
         try
         {
             // get input stream
-            InputStream ims = getAssets().open(pdr.parkImageName);
+            InputStream ims = getAssets().open(pdr.getParkImageName());
             // load image as Drawable
             Drawable d = Drawable.createFromStream(ims, null);
             // set image to ImageView
