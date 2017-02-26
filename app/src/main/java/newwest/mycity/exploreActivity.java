@@ -1,20 +1,15 @@
 package newwest.mycity;
 
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.NotificationCompat;
-import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -25,6 +20,10 @@ import java.io.InputStream;
 import java.text.DecimalFormat;
 import java.util.Random;
 
+import static newwest.mycity.R.id.publicArtCheckBox;
+import static newwest.mycity.R.id.treeCheckBox;
+import static newwest.mycity.R.id.waterFountainCheckBox;
+
 public class exploreActivity extends AppCompatActivity {
     public static int parkIndex;
     private static int TIME_OUT = 8000; //Time to launch the another activity
@@ -33,14 +32,16 @@ public class exploreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
+
         findViewById(R.id.Gobtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                go_rewards();
-                launchMap();
+                ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
+                String parkName = pdr.getParkName();
+                launchMap(parkName);
             }
         });
-        findViewById(R.id.Searchbtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.SearchMorebtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 load_activity(v);
@@ -86,8 +87,11 @@ public class exploreActivity extends AppCompatActivity {
 
     }
 
-    public void launchMap() {
-        String uri = "https://www.google.ca/maps/place/Queens+Park,+New+Westminster,+BC/";
+    public void launchMap(String parkName) {
+        String convertedParkName = parkName.replace(' ','+');
+
+//        String uri = "https://www.google.ca/maps/place/Queens+Park,+New+Westminster,+BC/";
+        String uri = "https://www.google.ca/maps/place/" + convertedParkName + ",+New+Westminster,+BC/";
 
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                 Uri.parse(uri));

@@ -15,48 +15,9 @@
         android:text="Go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/Gobtn"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="121dp"
-        android:id="@+id/Gobtn" />
-
-    <Button
-        android:text="Closer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Closerbtn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="54dp" />
-
-    <Button
-        android:text="Search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Closerbtn"
-        android:layout_alignStart="@+id/Gobtn"
-        android:id="@+id/Searchbtn" />
-
-    <Button
-        android:text="Further"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Searchbtn"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="14dp"
-        android:id="@+id/Furtherbtn" />
-
-    <TextView
-        android:text="Queens Park"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/parkName"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_above="@+id/parkDistance"
-        android:layout_toEndOf="@+id/Closerbtn"
-        android:layout_marginBottom="27dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="2.3km away"
@@ -65,55 +26,112 @@
         android:id="@+id/parkDistance"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/parkName" />
+        android:layout_alignBottom="@+id/distanceField"
+        android:layout_toEndOf="@+id/distanceField"
+        android:layout_alignTop="@+id/distanceField" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameField"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="150dp"
+        android:layout_alignBaseline="@+id/parkName"
+        android:layout_alignBottom="@+id/parkName"
+        android:layout_alignStart="@+id/distanceField" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_height="40dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/Gobtn"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="Rating:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingField"
-        android:layout_above="@+id/Gobtn"
-        android:layout_alignStart="@+id/nameField"
-        android:layout_marginBottom="11dp"
         android:textColor="#000000"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_alignStart="@+id/distanceField" />
 
-    <RatingBar
+    <TextView
+        android:text="Distance:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceField"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:text="Search More"
         android:layout_width="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/ratingField"
-        android:layout_toEndOf="@+id/nameField" />
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchMorebtn"
+        android:layout_above="@+id/Furthestbtn"
+        android:layout_toStartOf="@+id/Gobtn"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:text="Queens Park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parkName"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/parkDistance"
+        android:layout_toEndOf="@+id/distanceField" />
+
+    <Button
+        android:text="What's furthest?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Furthestbtn"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/parkName"
+        android:layout_alignEnd="@+id/ratingBar" />
+
+    <Button
+        android:text="What's Closest?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Closestbtn"
+        android:layout_alignBottom="@+id/Furthestbtn"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="You have Selected:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/youSelectedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youSelectedText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/selectedText"
+        android:layout_alignEnd="@+id/youSelectedText"
+        android:layout_above="@+id/SearchMorebtn" />
 
     <ImageView
         app:srcCompat="@mipmap/queens_park_entrance_sign_web"
         android:id="@+id/parkImage"
-        android:layout_marginBottom="11dp"
-        android:layout_above="@+id/parkName"
-        android:layout_centerHorizontal="true"
-        android:layout_width="240dp"
-        android:layout_height="240dp" />
-
-    <TextView
-        android:text="Name:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nameField"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_below="@+id/parkImage"
-        android:layout_toStartOf="@+id/parkImage"
-        android:layout_alignBottom="@+id/parkName" />
-
-    <TextView
-        android:text="Distance:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nameField"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_alignBottom="@+id/SearchMorebtn"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

@@ -3,10 +3,14 @@ package newwest.mycity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 
 public class SelectionActivity extends AppCompatActivity {
 
+
+    CheckBox test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +22,7 @@ public class SelectionActivity extends AppCompatActivity {
                 start();
             }
         });
+
     }
     public void start() {
 
@@ -25,4 +30,5 @@ public class SelectionActivity extends AppCompatActivity {
         startActivity(i);
         //finish();
     }
+
 }
