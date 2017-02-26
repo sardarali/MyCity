@@ -4,7 +4,7 @@ package newwest.mycity;
  * Created by sali on 2017-02-26.
  */
 
-public class treeDataRow {
+public class TreeDataRow {
     private String cultivar;
     private String genus;
     private String species;
@@ -16,7 +16,7 @@ public class treeDataRow {
     private String neighName;
     private String imageName;
 
-    public treeDataRow(String cultivar, String genus, String species, String commonName, String sciName,
+    public TreeDataRow(String cultivar, String genus, String species, String commonName, String sciName,
                        String locType, double xLoc, double yLoc, String neighName, String imageName) {
         this.cultivar = cultivar;
         this.genus = genus;

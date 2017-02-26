@@ -124,25 +124,6 @@
         android:layout_below="@+id/sciNameField_tree"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Gobtn_tree"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/Closestbtn_tree"
-        android:layout_marginStart="16dp" />
-
-    <Button
-        android:text="Find furthest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Furthestbtn_tree"
-        android:elevation="17dp"
-        android:layout_marginRight="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:text="You have Selected:"
         android:layout_width="wrap_content"
@@ -163,6 +144,25 @@
         android:layout_marginTop="28dp"
         android:layout_alignEnd="@+id/treeName"
         android:layout_width="100dp" />
+
+    <Button
+        android:text="Find furthest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Furthestbtn_tree"
+        android:elevation="17dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Gobtn_tree"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Gobtn_tree"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

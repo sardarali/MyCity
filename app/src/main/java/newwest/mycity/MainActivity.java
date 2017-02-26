@@ -1,32 +1,23 @@
 package newwest.mycity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static ArrayList<ParkDataRow> parksDataset;
-    public static ArrayList<treeDataRow> treesDataset;
+    public static ArrayList<TreeDataRow> treesDataset;
 
     public static double currentXCoord = 49.2067442;
     public static double currentYCoord = -122.91092950000001;
@@ -69,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadTreesDataset() throws Exception{
-        treesDataset = new ArrayList<treeDataRow>();
+        treesDataset = new ArrayList<TreeDataRow>();
         InputStream is = getResources().openRawResource(R.raw.trees_west);
         BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         br.readLine();//skip header row;
@@ -78,13 +69,24 @@ public class MainActivity extends AppCompatActivity {
         while((line = br.readLine()) != null){
             String[] splits = line.split(",");
 
-            if(splits[2].length()>3) {
-                treeDataRow tdr = new treeDataRow(splits[0], splits[1], splits[2], splits[3], splits[4],
-                        splits[5], Double.parseDouble(splits[6]), Double.parseDouble(splits[7]), splits[8], splits[9]);
+         //   if(splits[2].length()>3) {
+            double[] latLon = UTM2Deg.UTM2Deg(Double.parseDouble(splits[6]), Double.parseDouble(splits[7]));
+            double lat = latLon[0];
+            double lon = latLon[1];
+
+            String sciName = splits[4];
+            if(sciName != null) {
+                if(sciName.length() > 10)
+                sciName = sciName.substring(0, 10);
+            }
+
+
+                TreeDataRow tdr = new TreeDataRow(splits[0], splits[1], splits[2], splits[3], sciName,
+                        splits[5], lat, lon, splits[8], splits[9]);
                 if(!parksDataset.contains(tdr)) {
                     treesDataset.add(tdr);
                 }
-            }
+          //  }
         }
     }
 

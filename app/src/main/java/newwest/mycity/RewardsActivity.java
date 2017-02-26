@@ -38,7 +38,7 @@ public class RewardsActivity extends AppCompatActivity {
         try
         {
             // get input stream
-            InputStream ims = getAssets().open(pdr.getParkImageName());
+            InputStream ims = getAssets().open("parks/" + pdr.getParkImageName());
             // load image as Drawable
             Drawable d = Drawable.createFromStream(ims, null);
             // set image to ImageView

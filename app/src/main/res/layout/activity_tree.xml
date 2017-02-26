@@ -125,7 +125,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="10dp" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -142,7 +142,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="10dp" />
 
     <TextView
         android:text="Genus:"
@@ -153,7 +153,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="10dp" />
 
     <TextView
         android:text="Species:"
@@ -166,7 +166,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="10dp" />
 
     <TextView
         android:text="Common Name:"
@@ -178,7 +178,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="10dp" />
 
     <TextView
         android:text="Scientific Name:"
@@ -189,7 +189,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="15dp" />
 
     <LinearLayout
         android:orientation="horizontal"

@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.DecimalFormat;
 
 /**
  * Created by yzhang on 2017-02-26.
@@ -28,11 +26,11 @@ public class TreeActivity extends AppCompatActivity {
                 go_treeinter();
             }
         });
-        treeDataRow pdr = MainActivity.treesDataset.get(exploreTreeActivity.treeIndex);
+        TreeDataRow pdr = MainActivity.treesDataset.get(exploreTreeActivity.treeIndex);
         try
         {
             // get input stream
-            InputStream ims = getAssets().open(pdr.getImageName());
+            InputStream ims = getAssets().open("trees/" + pdr.getImageName());
             // load image as Drawable
             Drawable d = Drawable.createFromStream(ims, null);
             // set image to ImageView
