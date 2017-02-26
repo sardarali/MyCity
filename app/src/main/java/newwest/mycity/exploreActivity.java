@@ -101,7 +101,7 @@ public class exploreActivity extends AppCompatActivity {
         ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
         try
         {
-            InputStream ims = getAssets().open(pdr.getParkImageName());
+            InputStream ims = getAssets().open("parks/" + pdr.getParkImageName());
             Drawable d = Drawable.createFromStream(ims, null);
             ImageView iw = (ImageView) findViewById(R.id.parkImage);
             iw.setImageDrawable(d);
@@ -109,7 +109,8 @@ public class exploreActivity extends AppCompatActivity {
         }
         catch(IOException ex)
         {
-            //return;
+            Log.d("MEDIA_PLAYER", ex.getMessage());
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
