@@ -87,13 +87,13 @@
         android:layout_toEndOf="@+id/nameField" />
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
         app:srcCompat="@mipmap/queens_park_entrance_sign_web"
         android:id="@+id/parkImage"
         android:layout_marginBottom="11dp"
         android:layout_above="@+id/parkName"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="240dp" />
 
     <TextView
         android:text="Name:"

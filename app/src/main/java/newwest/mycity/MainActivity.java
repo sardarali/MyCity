@@ -27,6 +27,21 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     public static ArrayList<ParkDataRow> parksDataset;
 
+
+    public static double currentXCoord = 49.2067442;
+    public static double currentYCoord = -122.91092950000001;
+
+    public static double computeDistance(double x1, double y1, double x2, double y2){
+        double earthRadius = 6371000; //meters
+        double dLat = Math.toRadians(x2-x1);
+        double dLng = Math.toRadians(y2-y1);
+        double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(Math.toRadians(x1)) * Math.cos(Math.toRadians(x2)) *
+                        Math.sin(dLng/2) * Math.sin(dLng/2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return earthRadius * c;
+    }
+
     private void load_datasets() throws Exception{
         parksDataset = new ArrayList<ParkDataRow>();
 
@@ -41,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             if(splits[2].length()>3) {
                 ParkDataRow pdr = new ParkDataRow(splits[0], Integer.parseInt(splits[1]), splits[2], splits[3], splits[4],
-                        splits[5], splits[6], Float.parseFloat(splits[7]), Float.parseFloat(splits[8]), Integer.parseInt(splits[9]));
+                        splits[5], splits[6], Double.parseDouble(splits[7]), Double.parseDouble(splits[8]), Double.parseDouble(splits[9]));
                 if(!parksDataset.contains(pdr)) {
                     parksDataset.add(pdr);
                 }

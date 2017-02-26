@@ -12,13 +12,13 @@ public class ParkDataRow {
     private String neighbourhood;
     private String parkImageName;
     private String parkURL;
-    private float xCoord;
-    private float yCoord;
-    private int rating;
+    private double xCoord;
+    private double yCoord;
+    private double rating;
 
 
     public ParkDataRow(String streetName, int streetNumber, String parkName, String parkCategory,
-                       String neighbourhood, String parkImageName, String parkURL, float xCoord, float yCoord, int rating) {
+                       String neighbourhood, String parkImageName, String parkURL, double xCoord, double yCoord, double rating) {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
         this.parkName = parkName;
@@ -87,27 +87,27 @@ public class ParkDataRow {
         this.parkURL = parkURL;
     }
 
-    public float getxCoord() {
+    public double getxCoord() {
         return xCoord;
     }
 
-    public void setxCoord(float xCoord) {
+    public void setxCoord(double xCoord) {
         this.xCoord = xCoord;
     }
 
-    public float getyCoord() {
+    public double getyCoord() {
         return yCoord;
     }
 
-    public void setyCoord(float yCoord) {
+    public void setyCoord(double yCoord) {
         this.yCoord = yCoord;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 }

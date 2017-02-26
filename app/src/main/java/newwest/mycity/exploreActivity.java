@@ -16,6 +16,7 @@ import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,7 +55,6 @@ public class exploreActivity extends AppCompatActivity {
         parkIndex = rand.nextInt(parksDataSize+1);
         ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
 
-
         try
         {
             // get input stream
@@ -73,6 +73,13 @@ public class exploreActivity extends AppCompatActivity {
 
 
         t.setText(pdr.getParkName());
+
+        RatingBar rb = (RatingBar) findViewById(R.id.ratingBar);
+        rb.setRating((float) pdr.getRating());
+
+        TextView pd = (TextView) findViewById(R.id.parkDistance);
+        pd.setText(MainActivity.computeDistance(pdr.getxCoord(), pdr.getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord) + " km away");
+
     }
 
     public void launchMap() {
