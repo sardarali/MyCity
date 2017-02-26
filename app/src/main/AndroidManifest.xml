@@ -22,7 +22,7 @@
         <activity android:name=".benchActivity"></activity>
         <activity android:name=".RewardsActivity"></activity>
         <activity android:name=".SelectionActivity"></activity>
-
+        <activity android:name=".FeedbackActivity"></activity>
     </application>
 
 </manifest>

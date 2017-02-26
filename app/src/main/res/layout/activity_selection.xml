@@ -26,13 +26,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/eventsCheckBox"
         android:layout_below="@+id/destinationSelection"
-        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/parkView"
         android:layout_marginTop="55dp" />
 
     <ImageView
         app:srcCompat="@mipmap/events_icon"
         android:layout_marginStart="11dp"
-        android:id="@+id/imageView3"
+        android:id="@+id/parkView"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/eventsCheckBox"
@@ -44,7 +44,7 @@
         app:srcCompat="@mipmap/public_art_icon"
         android:id="@+id/imageView4"
         android:layout_below="@+id/eventsCheckBox"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_alignStart="@+id/parkView" />
 
     <CheckBox
         android:text="Public Art"
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignStart="@+id/parkView"
         android:id="@+id/selectDestinationText"
         android:textColor="#000000"
         android:textSize="25sp"/>

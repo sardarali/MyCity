@@ -3,21 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="129dp"
-        android:id="@+id/textView9" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/imageView5"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+            <TextView
+                android:text="Queens Park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="70dp" />
+
+            <ImageView
+                app:srcCompat="@mipmap/park1"
+                android:id="@+id/imageView3"
+                android:layout_width="135dp"
+                android:layout_marginStart="26dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
 
         <TextView
             android:text="How do you like this park?"
@@ -48,39 +61,244 @@
             android:id="@+id/textView18"
             android:textSize="18sp" />
 
-        <RelativeLayout
+        <Space
             android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="370dp"
             android:layout_height="142dp">
 
             <ScrollView android:layout_height="match_parent"
-                android:layout_width="300dp"
+                android:layout_width="340dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="29dp">
+                android:layout_alignParentEnd="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" >
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
 
-                    </RelativeLayout>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView21"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="I met my husband while playing Frisbee at this park 23 years ago last month!"
+                            android:layout_height="49dp"
+                            android:id="@+id/textView30"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView13"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="If you want a good walk, the path running around the periphery of the park is approximately 1.6km and is quite hilly in parts."
+                            android:layout_height="49dp"
+                            android:id="@+id/textView21"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView14"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="You can park at the parking lot in the middle of the park, or anywhere along the Western side of the park North of 2nd Ave."
+                            android:layout_height="49dp"
+                            android:id="@+id/textView23"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView15"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="Try out the benches downhill on the East side of the park in the afternoon for the best sunshine"
+                            android:layout_height="49dp"
+                            android:id="@+id/textView22"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView16"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="Please exercise your off-leash dogs at the specific doggy park provided for that purpose.  My little boy is scared of all the dogs that run loose."
+                            android:layout_height="49dp"
+                            android:id="@+id/textView25"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView22"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="If you’d like to join our daily pram-walk there are a group of us parents that meet at the South-East corner of the park by the little bridge across the highway."
+                            android:layout_height="49dp"
+                            android:id="@+id/textView40"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@mipmap/like"
+                            android:id="@+id/imageView12"
+                            android:layout_weight="0.06" />
+
+                        <TextView
+                            android:text="I met my husband while playing Frisbee at this park 23 years ago last month!"
+                            android:layout_height="49dp"
+                            android:id="@+id/textView20"
+                            android:layout_weight="0.26"
+                            android:layout_width="200dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.06" />
                 </LinearLayout>
+
             </ScrollView>
         </RelativeLayout>
 
-    </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
-    <ImageView
-        android:layout_width="60dp"
-        app:srcCompat="@mipmap/queens_park_entrance_sign_web"
-        android:id="@+id/imageView5"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView9"
-        android:layout_toEndOf="@+id/textView9"
-        android:layout_marginStart="47dp" />
+        <TextView
+            android:text="What's your story?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="372dp"
+            android:layout_height="87dp"
+            android:inputType="none|text"
+            android:text="Share your story here!"
+            android:ems="10"
+            android:id="@+id/editText2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
