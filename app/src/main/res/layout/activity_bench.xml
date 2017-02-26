@@ -10,43 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="newwest.mycity.benchActivity">
 
-    <TextView
-        android:text="Submit your story"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_above="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_marginBottom="12dp" />
-
-    <Button
-        android:text="Submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/btn_sbmt_bench_story" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:lines="3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:text="Park Bench No. 24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textView4"
-        android:layout_marginStart="23dp"
-        android:id="@+id/textView5" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +19,49 @@
         android:lines="6"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="user story goes here\nand here\nand here\nand here\nand here\nand here\nand here\nand here" />
+
+    <TextView
+        android:text="Park Bench No. 24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sbmt_bench_story"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:text="Submit your story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/edit_new_bench_story"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edit_new_bench_story"
+        android:lines="3"
+        android:textSize="14sp"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -63,6 +69,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
         android:layout_above="@+id/editText"
         android:layout_alignParentStart="true" />
 
