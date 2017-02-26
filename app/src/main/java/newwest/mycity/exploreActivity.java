@@ -1,8 +1,6 @@
 package newwest.mycity;
 
-import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.graphics.drawable.Drawable;
@@ -12,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -22,10 +19,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
 import java.util.Random;
-
-import static newwest.mycity.R.id.publicArtCheckBox;
-import static newwest.mycity.R.id.treeCheckBox;
-import static newwest.mycity.R.id.waterFountainCheckBox;
 
 public class exploreActivity extends AppCompatActivity {
     public static int parkIndex;
@@ -39,7 +32,7 @@ public class exploreActivity extends AppCompatActivity {
 
         load_selection();
 
-        findViewById(R.id.Gobtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Gobtn_tree).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
@@ -61,7 +54,7 @@ public class exploreActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.Furthestbtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Furthestbtn_tree).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 load_activity_farthest(v);
@@ -164,7 +157,7 @@ public class exploreActivity extends AppCompatActivity {
     }
 
     public void load_activity(View v, int park_index){
-        TextView t = (TextView) findViewById(R.id.parkName);
+        TextView t = (TextView) findViewById(R.id.treeSciName);
         parkIndex = park_index;
         ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
         try
@@ -187,7 +180,7 @@ public class exploreActivity extends AppCompatActivity {
         RatingBar rb = (RatingBar) findViewById(R.id.ratingBar);
         rb.setRating((float) pdr.getRating());
 
-        TextView pd = (TextView) findViewById(R.id.parkDistance);
+        TextView pd = (TextView) findViewById(R.id.treeDistance);
         double kmdist = MainActivity.computeDistance(pdr.getxCoord(), pdr.getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord) / 1000;
         DecimalFormat df =  new DecimalFormat("##.###");
         pd.setText( df.format(kmdist) + " km away");

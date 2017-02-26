@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 
+import java.util.Random;
+
 public class SelectionActivity extends AppCompatActivity {
 
     public static boolean isEventsChecked = false;
@@ -76,8 +78,21 @@ public class SelectionActivity extends AppCompatActivity {
             isWaterFountainChecked = false;
         }
 
-        Intent i = new Intent(SelectionActivity.this, exploreActivity.class);
-        startActivity(i);
+        int viewChoice = 0;
+        if(isParkChecked && isTreeChecked) {
+            viewChoice = new Random().nextInt(2);
+        }else{
+            if (isTreeChecked)
+                viewChoice = 1;
+        }
+
+
+        Intent intent = null;
+        if (viewChoice == 0)
+            intent = new Intent(SelectionActivity.this, exploreActivity.class);
+        else
+            intent = new Intent(SelectionActivity.this, exploreTreeActivity.class);
+        startActivity(intent);
         //finish();
     }
 

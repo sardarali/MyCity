@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_explore_tree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="newwest.mycity.exploreTreeActivity">
+
+    <Button
+        android:text="Find Closest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Closestbtn_tree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        app:srcCompat="@mipmap/default_tree"
+        android:id="@+id/parkImage"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/youSelectedParkText"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Search More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchMorebtn_tree"
+        android:layout_alignBottom="@+id/parkImage"
+        android:layout_alignStart="@+id/Furthestbtn_tree"
+        android:layout_marginBottom="62dp" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameField_tree"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="150dp"
+        android:layout_below="@+id/parkImage"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="2.4 km away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/treeDistance"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/distanceField_tree"
+        android:layout_alignBottom="@+id/distanceField_tree"
+        android:layout_alignStart="@+id/treeNeighborhood" />
+
+    <TextView
+        android:text="Red Maple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/treeName"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@+id/parkImage"
+        android:layout_toEndOf="@+id/parkImage"
+        android:layout_marginStart="9dp" />
+
+    <TextView
+        android:text="ACER RUBRUM "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/treeSciName"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/sciNameField_tree"
+        android:layout_alignBottom="@+id/sciNameField_tree"
+        android:layout_alignStart="@+id/treeName" />
+
+    <TextView
+        android:text="Queensborough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/treeNeighborhood"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/neighborhood_tree"
+        android:layout_alignBottom="@+id/neighborhood_tree"
+        android:layout_alignStart="@+id/treeName" />
+
+    <TextView
+        android:text="Neighborhood:"
+        android:layout_height="wrap_content"
+        android:id="@+id/neighborhood_tree"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="150dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/nameField_tree"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Scientific Name:"
+        android:layout_height="wrap_content"
+        android:id="@+id/sciNameField_tree"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="150dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/neighborhood_tree"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Distance:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceField_tree"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/sciNameField_tree"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Gobtn_tree"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Closestbtn_tree"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:text="Find furthest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Furthestbtn_tree"
+        android:elevation="17dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="You have Selected:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/youSelectedParkText"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedText_tree"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_below="@+id/youSelectedParkText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:layout_alignEnd="@+id/treeName"
+        android:layout_width="100dp" />
+
+
+</RelativeLayout>
