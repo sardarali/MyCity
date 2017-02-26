@@ -11,14 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="newwest.mycity.exploreActivity">
 
-    <Button
-        android:text="Go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Gobtn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="2.3km away"
         android:layout_width="wrap_content"
@@ -71,15 +63,6 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="13dp" />
 
-    <Button
-        android:text="Search More"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/SearchMorebtn"
-        android:layout_above="@+id/Furthestbtn"
-        android:layout_toStartOf="@+id/Gobtn"
-        android:layout_marginBottom="15dp" />
-
     <TextView
         android:text="Queens Park"
         android:layout_width="wrap_content"
@@ -91,47 +74,69 @@
         android:layout_above="@+id/parkDistance"
         android:layout_toEndOf="@+id/distanceField" />
 
-    <Button
-        android:text="What's furthest?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Furthestbtn"
-        android:layout_marginBottom="38dp"
-        android:layout_above="@+id/parkName"
-        android:layout_alignEnd="@+id/ratingBar" />
-
-    <Button
-        android:text="What's Closest?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Closestbtn"
-        android:layout_alignBottom="@+id/Furthestbtn"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:text="You have Selected:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/youSelectedText" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/youSelectedText"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp"
-        android:id="@+id/selectedText"
-        android:layout_alignEnd="@+id/youSelectedText"
-        android:layout_above="@+id/SearchMorebtn" />
+        android:id="@+id/youSelectedText"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
 
     <ImageView
         app:srcCompat="@mipmap/queens_park_entrance_sign_web"
         android:id="@+id/parkImage"
-        android:layout_width="210dp"
-        android:layout_height="210dp"
-        android:layout_alignBottom="@+id/SearchMorebtn"
-        android:layout_alignParentEnd="true" />
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_above="@+id/nameField"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedText"
+        android:layout_below="@+id/youSelectedText"
+        android:layout_marginTop="14dp"
+        android:layout_above="@+id/parkImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+    <Button
+        android:text="Find Closest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Closestbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Gobtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Find furthest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Furthestbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="17dp"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:text="Search More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchMorebtn"
+        android:layout_above="@+id/parkName"
+        android:layout_alignStart="@+id/Furthestbtn"
+        android:layout_marginBottom="48dp" />
 
 </RelativeLayout>

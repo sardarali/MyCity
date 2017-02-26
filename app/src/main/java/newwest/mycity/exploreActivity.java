@@ -1,6 +1,8 @@
 package newwest.mycity;
 
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.graphics.drawable.Drawable;
@@ -8,6 +10,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -27,11 +30,14 @@ import static newwest.mycity.R.id.waterFountainCheckBox;
 public class exploreActivity extends AppCompatActivity {
     public static int parkIndex;
     private static int TIME_OUT = 8000; //Time to launch the another activity
+    private static String selection = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
+
+        load_selection();
 
         findViewById(R.id.Gobtn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +70,68 @@ public class exploreActivity extends AppCompatActivity {
 
         load_activity_random(null);
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            selection = "";
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    public void load_selection() {
+        if(SelectionActivity.isEventsChecked) {
+            if(selection == "")  {
+                selection += "Events";
+            } else {
+                selection += "| Events";
+            }
+        }
+
+        if(SelectionActivity.isPublicArtChecked) {
+            if(selection == "")  {
+                selection += "Public Arts";
+            } else {
+                selection += " | Public Arts";
+            }
+        }
+
+        if(SelectionActivity.isParkChecked) {
+            if(selection == "")  {
+                selection += "Parks";
+            } else {
+                selection += " | Parks";
+            }
+        }
+
+        if(SelectionActivity.isTreeChecked) {
+            if(selection == "")  {
+                selection += "Trees";
+            } else {
+                selection += " | Trees";
+            }
+        }
+
+        if(SelectionActivity.isHeritageHomeChecked) {
+            if(selection == "")  {
+                selection += "Heritage Homes";
+            } else {
+                selection += " | Heritage Homes";
+            }
+        }
+
+        if(SelectionActivity.isWaterFountainChecked) {
+            if(selection == "")  {
+                selection += "Water Fountains";
+            } else {
+                selection += " | Water Fountains";
+            }
+        }
+
+        TextView selectionText = (TextView) findViewById(R.id.selectedText);
+        selectionText.setText(selection);
+    }
+
 
     public void load_activity_random(View v){
         load_activity(v, new Random().nextInt(MainActivity.parksDataset.size()));
