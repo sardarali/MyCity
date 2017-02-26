@@ -18,16 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TreeActivity">
-        <activity android:name=".TreeInterActivity">
-        <activity android:name=".exploreActivity" />
-        <activity android:name=".benchActivity" />
-        <activity android:name=".RewardsActivity" />
-        <activity android:name=".SelectionActivity" />
-        <activity android:name=".FeedbackActivity" />
-        <activity android:name=".exploreTreeActivity">
-        <activity android:name=".SettingActivity">
-        </activity>
+        <activity android:name=".TreeActivity"></activity>
+        <activity android:name=".TreeInterActivity"></activity>
+        <activity android:name=".exploreActivity"></activity>
+        <activity android:name=".benchActivity"></activity>
+        <activity android:name=".RewardsActivity"></activity>
+        <activity android:name=".SelectionActivity"></activity>
+        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".exploreTreeActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>

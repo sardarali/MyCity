@@ -28,36 +28,36 @@ public class TreeActivity extends AppCompatActivity {
                 go_treeinter();
             }
         });
-        treeDataRow pdr = MainActivity.treesDataset.get(exploreTreeActivity.treeIndex);
-        try
-        {
-            // get input stream
-            InputStream ims = getAssets().open(pdr.getImageName());
-            // load image as Drawable
-            Drawable d = Drawable.createFromStream(ims, null);
-            // set image to ImageView
-            ImageView iw = (ImageView) findViewById(R.id.imageView18);
-            iw.setImageDrawable(d);
-            ims .close();
-        }
-        catch(IOException ex)
-        {
-            //return;
-        }
-        TextView cname = (TextView) findViewById(R.id.textView34);
-        cname.setText("Common Name: " + pdr.getCommonName());
-
-        TextView sname = (TextView) findViewById(R.id.textView35);
-        sname.setText("Scientific Name: " + pdr.getSciName());
-
-        TextView species = (TextView) findViewById(R.id.textView33);
-        species.setText("Species: " + pdr.getSpecies());
-
-        TextView genus = (TextView) findViewById(R.id.textView32);
-        genus.setText("Genus: " + pdr.getGenus());
-
-        TextView cult = (TextView) findViewById(R.id.textView31);
-        cult.setText("Cultivar: " + pdr.getCultivar());
+//        treeDataRow pdr = MainActivity.treesDataset.get(exploreTreeActivity.treeIndex);
+//        try
+//        {
+//            // get input stream
+//            InputStream ims = getAssets().open(pdr.getImageName());
+//            // load image as Drawable
+//            Drawable d = Drawable.createFromStream(ims, null);
+//            // set image to ImageView
+//            ImageView iw = (ImageView) findViewById(R.id.imageView18);
+//            iw.setImageDrawable(d);
+//            ims .close();
+//        }
+//        catch(IOException ex)
+//        {
+//            //return;
+//        }
+//        TextView cname = (TextView) findViewById(R.id.textView34);
+//        cname.setText("Common Name: " + pdr.getCommonName());
+//
+//        TextView sname = (TextView) findViewById(R.id.textView35);
+//        sname.setText("Scientific Name: " + pdr.getSciName());
+//
+//        TextView species = (TextView) findViewById(R.id.textView33);
+//        species.setText("Species: " + pdr.getSpecies());
+//
+//        TextView genus = (TextView) findViewById(R.id.textView32);
+//        genus.setText("Genus: " + pdr.getGenus());
+//
+//        TextView cult = (TextView) findViewById(R.id.textView31);
+//        cult.setText("Cultivar: " + pdr.getCultivar());
 
 
     }
