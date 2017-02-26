@@ -24,7 +24,7 @@ import java.io.InputStream;
 import java.util.Random;
 
 public class exploreActivity extends AppCompatActivity {
-
+    public static int parkIndex;
     private static int TIME_OUT = 8000; //Time to launch the another activity
 
     @Override
@@ -51,8 +51,8 @@ public class exploreActivity extends AppCompatActivity {
 
         int parksDataSize = MainActivity.parksDataset.size();
         Random rand = new Random();
-        int  randomPark = rand.nextInt(parksDataSize+1);
-        ParkDataRow pdr = MainActivity.parksDataset.get(randomPark);
+        parkIndex = rand.nextInt(parksDataSize+1);
+        ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
 
 
         try

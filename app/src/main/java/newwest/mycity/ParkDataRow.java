@@ -5,15 +5,19 @@ package newwest.mycity;
  */
 
 public class ParkDataRow {
-    String streetName;
-    String streetNumber;
-    String parkName;
-    String parkCategory;
-    String neighbourhood;
-    String parkImageName;
-    String parkURL;
+    private String streetName;
+    private int streetNumber;
+    private String parkName;
+    private String parkCategory;
+    private String neighbourhood;
+    private String parkImageName;
+    private String parkURL;
+    private float xCoord;
+    private float yCoord;
+    private int rating;
 
-    public ParkDataRow(String streetName, String streetNumber, String parkName, String parkCategory, String neighbourhood, String parkImageName, String parkURL) {
+
+    public ParkDataRow(String streetName, int streetNumber, String parkName, String parkCategory, String neighbourhood, String parkImageName, String parkURL) {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
         this.parkName = parkName;
@@ -31,11 +35,11 @@ public class ParkDataRow {
         this.streetName = streetName;
     }
 
-    public String getStreetNumber() {
+    public int getStreetNumber() {
         return streetNumber;
     }
 
-    public void setStreetNumber(String streetNumber) {
+    public void setStreetNumber(int streetNumber) {
         this.streetNumber = streetNumber;
     }
 
@@ -77,5 +81,29 @@ public class ParkDataRow {
 
     public void setParkURL(String parkURL) {
         this.parkURL = parkURL;
+    }
+
+    public float getxCoord() {
+        return xCoord;
+    }
+
+    public void setxCoord(float xCoord) {
+        this.xCoord = xCoord;
+    }
+
+    public float getyCoord() {
+        return yCoord;
+    }
+
+    public void setyCoord(float yCoord) {
+        this.yCoord = yCoord;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
