@@ -90,7 +90,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         app:srcCompat="@mipmap/queens_park_entrance_sign_web"
-        android:id="@+id/queensParkImage"
+        android:id="@+id/parkImage"
         android:layout_marginBottom="11dp"
         android:layout_above="@+id/parkName"
         android:layout_centerHorizontal="true" />
@@ -102,8 +102,8 @@
         android:id="@+id/nameField"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_below="@+id/queensParkImage"
-        android:layout_toStartOf="@+id/queensParkImage"
+        android:layout_below="@+id/parkImage"
+        android:layout_toStartOf="@+id/parkImage"
         android:layout_alignBottom="@+id/parkName" />
 
     <TextView
