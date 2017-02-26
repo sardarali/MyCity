@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class benchActivity extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bench);
+        setContentView(R.layout.activity_setting);
     }
 
     @Override
@@ -30,13 +30,15 @@ public class benchActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-//            return true;
+            return true;
         }
+
         if (id == R.id.QuestedTreasure) {
-            Intent i = new Intent(benchActivity.this, SettingActivity.class);
+            Intent i = new Intent(SettingActivity.this, SettingActivity.class);
             startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 }
