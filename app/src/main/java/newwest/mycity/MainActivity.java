@@ -47,11 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void start() {
-//        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-//        // interval of alarm ring
-//        int interval = 8000; // in milliseconds
-
-        Intent i = new Intent(MainActivity.this, exploreActivity.class);
+        Intent i = new Intent(MainActivity.this, SelectionActivity.class);
         startActivity(i);
         //finish();
     }
