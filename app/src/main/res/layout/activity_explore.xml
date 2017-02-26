@@ -47,53 +47,73 @@
         android:layout_marginEnd="14dp"
         android:id="@+id/Furtherbtn" />
 
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+    <TextView
         android:text="Distance:"
-        android:ems="10"
-        android:layout_above="@+id/Gobtn"
-        android:layout_alignStart="@+id/namefield"
-        android:layout_marginBottom="26dp"
-        android:id="@+id/distancefield" />
-
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_above="@+id/distancefield"
-        android:layout_toEndOf="@+id/Closerbtn"
+        android:id="@+id/distanceField"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/nameField"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="Queens Park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/parkName"
-        android:text="Queens Park" />
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_above="@+id/parkDistance"
+        android:layout_toEndOf="@+id/Closerbtn"
+        android:layout_marginBottom="27dp" />
 
-    <EditText
+    <TextView
+        android:text="Name:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/parkName"
-        android:layout_alignStart="@+id/parkName"
-        android:id="@+id/parkDistance"
-        android:text="2.3 km away" />
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        app:srcCompat="@mipmap/Queens_Park_Entrance_Sign_web"
-        android:id="@+id/imageView2"
-        android:layout_above="@+id/namefield"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name:"
-        android:ems="10"
-        android:id="@+id/namefield"
+        android:id="@+id/nameField"
+        android:textColor="#000000"
+        android:textSize="18sp"
         android:layout_alignBaseline="@+id/parkName"
         android:layout_alignBottom="@+id/parkName"
         android:layout_alignStart="@+id/Closerbtn" />
+
+    <TextView
+        android:text="2.3km away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parkDistance"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/parkName" />
+
+    <TextView
+        android:text="Rating:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingField"
+        android:layout_above="@+id/Gobtn"
+        android:layout_alignStart="@+id/distanceField"
+        android:layout_marginBottom="11dp"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/ratingField"
+        android:layout_toEndOf="@+id/distanceField" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@mipmap/queens_park_entrance_sign_web"
+        android:id="@+id/imageView5"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/parkName"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

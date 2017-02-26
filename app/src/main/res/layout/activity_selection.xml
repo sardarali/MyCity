@@ -11,17 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="newwest.mycity.SelectionActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Select destinations"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/destinationSelection"
-        android:textSize="30sp" />
-
     <Button
         android:text="Next"
         android:layout_width="wrap_content"
@@ -64,5 +53,83 @@
         android:layout_alignBottom="@+id/imageView4"
         android:layout_toEndOf="@+id/imageView4"
         android:id="@+id/publicArtCheckBox" />
+
+    <TextView
+        android:text="Select Destinations:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:id="@+id/selectDestinationText"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:text="Parks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/parkCheckBox"
+        android:layout_below="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <CheckBox
+        android:text="Trees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parkCheckBox"
+        android:layout_alignStart="@+id/parkCheckBox"
+        android:layout_marginTop="17dp"
+        android:id="@+id/treeCheckBox" />
+
+    <CheckBox
+        android:text="Heritage Homes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/treeCheckBox"
+        android:layout_alignStart="@+id/treeCheckBox"
+        android:layout_marginTop="21dp"
+        android:id="@+id/heritageHomeCheckBox" />
+
+    <CheckBox
+        android:text="Water Fountains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heritageHomeCheckBox"
+        android:layout_alignStart="@+id/heritageHomeCheckBox"
+        android:layout_marginTop="17dp"
+        android:id="@+id/waterFountainCheckBox" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/trees_icon"
+        android:id="@+id/treesIcon"
+        android:layout_below="@+id/parkCheckBox"
+        android:layout_toStartOf="@+id/treeCheckBox" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/heritage_home_icon"
+        android:id="@+id/heritagehomesIcon"
+        android:layout_alignTop="@+id/heritageHomeCheckBox"
+        android:layout_toStartOf="@+id/heritageHomeCheckBox" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/water_fountain_icon"
+        android:id="@+id/waterFountainIcon"
+        android:layout_alignTop="@+id/waterFountainCheckBox"
+        android:layout_alignStart="@+id/heritagehomesIcon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/park_icon"
+        android:layout_above="@+id/treesIcon"
+        android:layout_alignStart="@+id/treesIcon"
+        android:id="@+id/park_icon" />
 
 </RelativeLayout>
