@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         InputStream is = getResources().openRawResource(R.raw.parks);
 
         BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+        br.readLine();//skip header row;
         String line = "";
         while((line = br.readLine()) != null){
             String[] splits = line.split(",");
