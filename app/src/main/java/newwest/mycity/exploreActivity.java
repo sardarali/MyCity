@@ -50,13 +50,26 @@ public class exploreActivity extends AppCompatActivity {
         findViewById(R.id.SearchMorebtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                load_activity(v);
+                load_activity_random(v);
             }
         });
-        load_activity(null);
 
+        findViewById(R.id.Closestbtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                load_activity_closest(v);
+            }
+        });
+
+        findViewById(R.id.Furthestbtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                load_activity_farthest(v);
+            }
+        });
+
+        load_activity_random(null);
     }
-
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -119,21 +132,45 @@ public class exploreActivity extends AppCompatActivity {
         selectionText.setText(selection);
     }
 
-    public void load_activity(View v){
+
+    public void load_activity_random(View v){
+        load_activity(v, new Random().nextInt(MainActivity.parksDataset.size()));
+    }
+
+    public void load_activity_closest(View v){
+        int closest_park_idx = 0;
+        double minDist = MainActivity.computeDistance(MainActivity.parksDataset.get(0).getxCoord(), MainActivity.parksDataset.get(0).getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord);
+        for(int i=1; i<MainActivity.parksDataset.size(); i++){
+            double currDist = MainActivity.computeDistance(MainActivity.parksDataset.get(i).getxCoord(), MainActivity.parksDataset.get(i).getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord);
+            if (currDist < minDist ) {
+                minDist = currDist;
+                closest_park_idx = i;
+            }
+        }
+        load_activity(v, closest_park_idx);
+    }
+
+    public void load_activity_farthest(View v){
+        int farthest_park_idx = 0;
+        double minDist = MainActivity.computeDistance(MainActivity.parksDataset.get(0).getxCoord(), MainActivity.parksDataset.get(0).getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord);
+        for(int i=1; i<MainActivity.parksDataset.size(); i++){
+            double currDist = MainActivity.computeDistance(MainActivity.parksDataset.get(i).getxCoord(), MainActivity.parksDataset.get(i).getyCoord(), MainActivity.currentXCoord, MainActivity.currentYCoord);
+            if (currDist > minDist ) {
+                minDist = currDist;
+                farthest_park_idx = i;
+            }
+        }
+        load_activity(v, farthest_park_idx);
+    }
+
+    public void load_activity(View v, int park_index){
         TextView t = (TextView) findViewById(R.id.parkName);
-
-        int parksDataSize = MainActivity.parksDataset.size();
-        Random rand = new Random();
-        parkIndex = rand.nextInt(parksDataSize);
+        parkIndex = park_index;
         ParkDataRow pdr = MainActivity.parksDataset.get(parkIndex);
-
         try
         {
-            // get input stream
             InputStream ims = getAssets().open(pdr.getParkImageName());
-            // load image as Drawable
             Drawable d = Drawable.createFromStream(ims, null);
-            // set image to ImageView
             ImageView iw = (ImageView) findViewById(R.id.parkImage);
             iw.setImageDrawable(d);
             ims .close();
