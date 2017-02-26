@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".exploreActivity"></activity>
+        <activity android:name=".benchActivity"></activity>
         <activity android:name=".RewardsActivity"></activity>
         <activity android:name=".SelectionActivity"></activity>
 
