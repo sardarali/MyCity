@@ -61,7 +61,7 @@ public class TreeActivity extends AppCompatActivity {
         if(pdr.getCommonName() == null || pdr.getCommonName().equals("")){
             cult2.setText("Oops! No one knows about this tree, why don't you tell us?");
         }else{
-            cult2.setText("");
+            cult2.setText("Wrong Information? Tell us!");
         }
 
 

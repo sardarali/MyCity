@@ -20,10 +20,10 @@
         android:layout_height="15dp" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         app:srcCompat="@mipmap/noimage"
-        android:id="@+id/imageView18" />
+        android:id="@+id/imageView18"
+        android:layout_height="200dp"
+        android:layout_width="250dp" />
 
     <TextView
         android:text="Common Name:"
